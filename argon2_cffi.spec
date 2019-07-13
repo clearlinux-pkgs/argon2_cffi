@@ -6,7 +6,7 @@
 #
 Name     : argon2_cffi
 Version  : 19.1.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/aa/bb/d620acb83d6e7d0a1f896557524b85e058500bd858ee814d467428718811/argon2_cffi-19.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/aa/bb/d620acb83d6e7d0a1f896557524b85e058500bd858ee814d467428718811/argon2_cffi-19.1.0.tar.gz
 Source99 : https://files.pythonhosted.org/packages/aa/bb/d620acb83d6e7d0a1f896557524b85e058500bd858ee814d467428718811/argon2_cffi-19.1.0.tar.gz.asc
