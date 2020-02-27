@@ -6,10 +6,10 @@
 #
 Name     : argon2_cffi
 Version  : 19.2.0
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/e4/96/f1bf2369f29794971f836b8eff5e3bdb653043f1b61d104eae21b1de3ccb/argon2-cffi-19.2.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e4/96/f1bf2369f29794971f836b8eff5e3bdb653043f1b61d104eae21b1de3ccb/argon2-cffi-19.2.0.tar.gz
-Source1 : https://files.pythonhosted.org/packages/e4/96/f1bf2369f29794971f836b8eff5e3bdb653043f1b61d104eae21b1de3ccb/argon2-cffi-19.2.0.tar.gz.asc
+Source1  : https://files.pythonhosted.org/packages/e4/96/f1bf2369f29794971f836b8eff5e3bdb653043f1b61d104eae21b1de3ccb/argon2-cffi-19.2.0.tar.gz.asc
 Summary  : The secure Argon2 password hashing algorithm.
 Group    : Development/Tools
 License  : CC0-1.0 MIT
@@ -55,6 +55,7 @@ python components for the argon2_cffi package.
 Summary: python3 components for the argon2_cffi package.
 Group: Default
 Requires: python3-core
+Provides: pypi(argon2-cffi)
 
 %description python3
 python3 components for the argon2_cffi package.
@@ -62,13 +63,14 @@ python3 components for the argon2_cffi package.
 
 %prep
 %setup -q -n argon2-cffi-19.2.0
+cd %{_builddir}/argon2-cffi-19.2.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1572273087
+export SOURCE_DATE_EPOCH=1582846452
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
